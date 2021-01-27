@@ -3,8 +3,6 @@
 
 package tempConverter;
 import java.util.*;
-import static java.lang.Math.*;
-
 public class Temp {
 
 	public static void main(String[] args) {
@@ -12,37 +10,52 @@ public class Temp {
 		//variables
 		Scanner kb = new Scanner(System.in);
 		int menu = -1;
+		String run = "";
 		double far = 1, celc = 1;
-		boolean bool = false;
+		boolean bool = false, bool1 = true;
 		
-		//ask user if they want to convert to farenheit or celcius
+		//a loop so that the user doesn't have to execute the program over and over again. they can just...
+		//keep converting temperatures if they want
 		do{
+			//ask user if they want to convert to farenheit or celcius
+			do{
+				
+				System.out.print("\nWhich temperature converion would you like to perform?\n\n1:farenheit to celcius");
+				System.out.print("\n2:celcius to farenheit\n");
 			
-			System.out.print("\nWhich tempurature converion would you like to perform?\n\n1:farenheit to celcius");
-			System.out.print("\n2:celcius to farenheit\n");
-		
-			menu = kb.nextInt();
+				menu = kb.nextInt();
+				
+				if(menu == 1) {
+					
+					System.out.println("\nWhat is the temperature in farenheit? ");
+					far = kb.nextDouble();
+					farToCelc(far);
+					
+					bool = true;
+					
+				} else if(menu == 2) {
+					
+					System.out.println("What is the temperature in celcius? ");
+					celc = kb.nextDouble();
+					celcToFar(celc);
+					bool = true;
+					
+				} else {
+					System.out.println("please only enter a 1 or a 2.");
+				}
+				
+			}while(bool != true);
 			
-			if(menu == 1) {
-				
-				System.out.println("\nWhat is the tempurature in farenheit? ");
-				far = kb.nextDouble();
-				farToCelc(far);
-				
-				bool = true;
-				
-			} else if(menu == 2) {
-				
-				System.out.println("What is the tempurature in celcius? ");
-				celc = kb.nextDouble();
-				celcToFar(celc);
-				bool = true;
-				
+			System.out.print("\n\nWould you like to convert another temperature? Type yes or no  ");
+			run = kb.next();
+			
+			if(run.equalsIgnoreCase("yes")) {
+				bool1 = true;
 			} else {
-				System.out.println("please only enter a 0 or a 1.");
+				bool1 = false; //hopefully stop the program..
 			}
 			
-		}while(bool != true);
+		}while(bool1 == true);
 
 	}
 	
@@ -57,5 +70,5 @@ public class Temp {
 	}
 
 }
-}
+
 
