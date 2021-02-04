@@ -16,7 +16,7 @@ public class MyFirstClass {
 				"Are you sure that's not a rock painted like a banana?",
 				"eww.",
 				"What, did you fry it?",
-				"Thanks!\\n\\n\\tI hate it"};
+				"Thanks!\n\n\tI hate it"};
 		
 		String[] threeFour = {"mmmm, crunchy banana",
 				"That is indeed pretty firm",
@@ -69,7 +69,11 @@ public class MyFirstClass {
 			System.out.println("\n" + nineTen[(int)(Math.random()*5)]);
 			
 		} else {
-			System.out.println("That number isn't withing the range of 1-10\n\n\nstupid");
+			System.out.println("That number isn't within the range of 1-10\n\n\nstupid");
+		}
+		
+		if(num == 420 || num == 69 || num == 42069 || num == 420.69) {
+			System.out.println("\nbut nice");
 		}
 
 	}
