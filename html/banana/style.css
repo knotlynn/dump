@@ -1,5 +1,28 @@
+/*make square do thing*/
+html, body{
+  border: 0;
+  margin: 0;
+}
+
+html{
+  background: #f1e8b8;
+}
+
+body{
+  width: 75%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/*SLIDER GO BRRRRRR*/
 .slidecontainer {
-  width: 100%;
+  width: 55%;
+}
+
+/*make word do thing*/
+header{
+  font-family: 'Fredoka One', cursive;
+  color: #191919;
 }
 
 .slider {
@@ -7,16 +30,16 @@
   width: 100%;
   height: 15px;
   border-radius: 7px;
-  background: #d3d3d3;
+  background: blue;
   outline: none;
-  opacity: 0.7;
+  /*opacity: 0.7;*/
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
 
 
 .slider:hover {
-  opacity: 1;
+  /*background-color: #ADADAD;*/
 }
 
 .slider::-webkit-slider-thumb {
@@ -24,7 +47,7 @@
   appearance: none;
   width: 25px;
   height: 25px;
-  background: yellow;
+  background: red;
   border-radius: 10px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -33,14 +56,6 @@
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #4CAF50;
+  background: #f4e87c;
   cursor: pointer;
-}
-
-section, article{
-  text-align: center;
-}
-
-article{
-  padding: 25px;
 }

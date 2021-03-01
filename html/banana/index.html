@@ -2,6 +2,8 @@
 <head>
   <title>banana</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fredoka+One&display=swap" rel="stylesheet">
   <script src="myscript.js"></script>
 </head>
 
@@ -9,15 +11,17 @@
   <h1>BANANA MUSHINESS SCALE</h1>
 </header>
 <body>
-  <section>
-    <p id = "num">5</p>
-  </section>
+
+    <section>
+      <p id = "num">5</p>
+    </section>
+
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+
+  <article>
+    <p id ="out">output<p>
+  </article>
+
 </body>
-
-<div class="slidecontainer">
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-</div>
-
-<article>
-  <p id ="out">output<p>
-</article>
