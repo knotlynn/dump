@@ -1,34 +1,52 @@
-/*make square do thing*/
-html, body{
-  border: 0;
-  margin: 0;
-}
-
+/*BASIC SETUP*/
 html{
-  background: #f1e8b8;
+  background-color: #f1e8b8;
 }
 
 body{
-  width: 75%;
-  min-width: 800px;
-  margin: 0 auto;
-}
-
-header, body{
   background-color: #e58f65;
-  border-radius: 20px;
-  border: solid 2px;
-}
-
-
-/*make word do thing*/
-header{
-  font-family: 'Fredoka One', cursive;
+  width: 80%;
+  min-width: 800px;
+  border-radius: 15px;
+  padding: 1%;
+  margin: 0 auto;
   color: #191919;
 }
 
-article{
+/*TYPOGRAPHY*/
+h1{
+  font-family: 'Fredoka One', cursive;
+}
+p, h2{
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2{
+  text-align: center;
+}
+
+#out{
   color: #e58f65;
+  text-align: center;
+}
+
+/*HEADER FORMATTING*/
+
+header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body > * {
+  padding: 1%;
+}
+
+main, header, article, footer, section {
+  padding: 1%;
+}
+header, main, footer{
+  background-color: #d05353;
+  border-radius: 15px;
 }
 
 

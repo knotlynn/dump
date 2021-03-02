@@ -3,28 +3,35 @@
   <title>banana</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
-<header>
-  <h1>BANANA MUSHINESS SCALE</h1>
-</header>
 
 <body>
+  <header>
+    <h1>BANANA MUSHINESS SCALE</h1>
+  </header>
+
+  <main>
+    <article>
+      <p>This program provides input based on how mushy the banana you just ate (or are about to eat) is. Don't have a banana on hand? No problem, just imagine a banana in your brain and think about how mushy that banana is. Then rate it on a scale of 1-10, with 10 being the most mushy banana possible.</p>
+      <p>so anyways...</p>
+      <h2>how mushy is your banana?</h2>
+    <p id = "num">5</p>
+    </article>
+
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
 
     <section>
-      <p id = "num">5</p>
+      <p id ="out">output</p>
+      <button type="button" onclick="document.getElementById('out').style.color = '#191919'">Show me My results</button>
     </section>
+  </main>
 
-  <div class="slidecontainer">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-  </div>
+  <footer></footer>
 
-  <article>
-    <p id ="out">output</p>
-    <button type="button" onclick="document.getElementById('out').style.color = '#191919'">Show me My results</button>
-  </article>
-
-<script src="myscript.js"></script>
+  <script src="myscript.js"></script>
 </body>

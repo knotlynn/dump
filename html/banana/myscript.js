@@ -32,18 +32,18 @@ var slider = document.getElementById("myRange");
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
-  var mush = this.value * .1;
+  var mush = this.value;
   document.getElementById("num").innerHTML = mush;
 
-  if(mush >=1 && mush <2.5){
+  if(mush >=1 && mush <25){
     document.getElementById("out").innerHTML = oneTwo[Math.floor(Math.random() * 5)];
-  }else if(mush >=2.5 && mush <4.5){
+  }else if(mush >=25 && mush <45){
     document.getElementById("out").innerHTML = threeFour[Math.floor(Math.random() * 5)];
-  }else if(mush >= 4.5 && mush <= 6.5){
+  }else if(mush >= 45 && mush <= 65){
     document.getElementById("out").innerHTML = fiveSix[Math.floor(Math.random() * 5)];
-  }else if(mush >= 6.5 && mush < 8.5){
+  }else if(mush >= 65 && mush < 85){
     document.getElementById("out").innerHTML = sevenEight[Math.floor(Math.random() * 5)];
-  }else if(mush >= 8.5 && mush <=10){
+  }else if(mush >= 85 && mush <=100){
     document.getElementById("out").innerHTML = nineTen[Math.floor(Math.random() * 5)];
   }
 }
