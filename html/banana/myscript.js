@@ -11,6 +11,26 @@ function hide(){
 	document.getElementById('pic').style.display = "none";
 }
 
+var one = ["Are you sure that's not a rock painted to look like a banana?",
+				"What, did you fry it?",
+				"That's just.....pure green. It's so green it's almost blue",
+				"If I bit into that, I would break my teeth",
+				"Thanks!!\t\t\tI hate it :)"];
+var two = ["", "", "", "", ""];
+var three = ["", "", "", "", ""];
+var four = ["", "", "", "", ""];
+var five = ["", "", "", "", ""];
+var six = ["", "", "", "", ""];
+var seven = ["", "", "", "", ""];
+var eight = ["", "", "", "", ""];
+var nine = ["", "", "", "", ""];
+var ten = ["I'm not convinced you DIDN'T fish this out of a grocery store dumpster",
+				"What, did you feed the banana Taco Bell?",
+				"That's just a pile of goo you're calling a banana",
+				"Thanks, I've always wanted some slime",
+				"I'd rather stick my hand in a blender than call this a banana."];
+
+/*
 var oneTwo = ["That's just.... pure green. There isn't even a hint of yellow",
 				"Are you sure that's not a rock painted like a banana?",
 				"eww.",
@@ -65,3 +85,4 @@ slider.oninput = function() {
 		document.getElementById("pic").src = "5.png";
   }
 }
+*/
