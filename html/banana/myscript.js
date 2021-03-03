@@ -1,3 +1,16 @@
+document.getElementById('out').style.display = "none";
+document.getElementById('pic').style.display = "none";
+
+function display(){
+	document.getElementById('out').style.display = "block";
+	document.getElementById('pic').style.display = "block";
+}
+
+function hide(){
+	document.getElementById('out').style.display = "none";
+	document.getElementById('pic').style.display = "none";
+}
+
 var oneTwo = ["That's just.... pure green. There isn't even a hint of yellow",
 				"Are you sure that's not a rock painted like a banana?",
 				"eww.",
@@ -37,13 +50,18 @@ slider.oninput = function() {
 
   if(mush >=1 && mush <25){
     document.getElementById("out").innerHTML = oneTwo[Math.floor(Math.random() * 5)];
+		document.getElementById("pic").src = "1.png";
   }else if(mush >=25 && mush <45){
     document.getElementById("out").innerHTML = threeFour[Math.floor(Math.random() * 5)];
+		document.getElementById("pic").src = "2.jfif";
   }else if(mush >= 45 && mush <= 65){
     document.getElementById("out").innerHTML = fiveSix[Math.floor(Math.random() * 5)];
+		document.getElementById("pic").src = "3.png";
   }else if(mush >= 65 && mush < 85){
     document.getElementById("out").innerHTML = sevenEight[Math.floor(Math.random() * 5)];
+		document.getElementById('pic').src = "4.jfif"
   }else if(mush >= 85 && mush <=100){
     document.getElementById("out").innerHTML = nineTen[Math.floor(Math.random() * 5)];
+		document.getElementById("pic").src = "5.png";
   }
 }
