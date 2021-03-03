@@ -72,8 +72,8 @@ public class MyFirstClass {
 			System.out.println("That number isn't within the range of 1-10\n\n\nstupid");
 		}
 		
-		if(num == 420 || num == 69 || num == 42069 || num == 420.69) {
-			System.out.println("\nbut nice");
+		if(num == 420 || num == 69 || num == 42069 || num == 420.69 || num == -42069) {
+			System.out.println("\nbut noice");
 		}
 
 	}
