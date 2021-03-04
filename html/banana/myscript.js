@@ -1,6 +1,8 @@
+//automatically hide the results so there's not a bunch of flashing text every time the slider moves
 document.getElementById('out').style.display = "none";
 document.getElementById('pic').style.display = "none";
 
+//buttons to hide/show results
 function display(){
 	document.getElementById('out').style.display = "block";
 	document.getElementById('pic').style.display = "block";
@@ -10,6 +12,11 @@ function hide(){
 	document.getElementById('out').style.display = "none";
 	document.getElementById('pic').style.display = "none";
 }
+
+//Get input from slider
+slider.oninput = function() {
+  var mush = this.value;
+  document.getElementById("num").innerHTML = mush;
 
 var one = ["Are you sure that's not a rock painted to look like a banana?",
 				"What, did you fry it?",
