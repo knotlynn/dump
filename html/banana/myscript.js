@@ -1,95 +1,68 @@
+//*** Brenna Curtis, Banana Program ***//
+
 //automatically hide the results so there's not a bunch of flashing text every time the slider moves
 document.getElementById('out').style.display = "none";
 document.getElementById('pic').style.display = "none";
 
-//buttons to hide/show results
+/*** BUTTONS ***/
+//button to show results
 function display(){
 	document.getElementById('out').style.display = "block";
 	document.getElementById('pic').style.display = "block";
 }
 
+//buttons to hide resluts because why not
 function hide(){
 	document.getElementById('out').style.display = "none";
 	document.getElementById('pic').style.display = "none";
 }
 
-//Get input from slider
-slider.oninput = function() {
-  var mush = this.value;
-  document.getElementById("num").innerHTML = mush;
-
-var one = ["Are you sure that's not a rock painted to look like a banana?",
-				"What, did you fry it?",
-				"That's just.....pure green. It's so green it's almost blue",
-				"If I bit into that, I would break my teeth",
-				"Thanks!!\t\t\tI hate it :)"];
-var two = ["", "", "", "", ""];
-var three = ["", "", "", "", ""];
-var four = ["", "", "", "", ""];
-var five = ["", "", "", "", ""];
-var six = ["", "", "", "", ""];
-var seven = ["", "", "", "", ""];
-var eight = ["", "", "", "", ""];
-var nine = ["", "", "", "", ""];
-var ten = ["I'm not convinced you DIDN'T fish this out of a grocery store dumpster",
-				"What, did you feed the banana Taco Bell?",
-				"That's just a pile of goo you're calling a banana",
-				"Thanks, I've always wanted some slime",
-				"I'd rather stick my hand in a blender than call this a banana."];
-
-/*
-var oneTwo = ["That's just.... pure green. There isn't even a hint of yellow",
-				"Are you sure that's not a rock painted like a banana?",
-				"eww.",
-				"What, did you fry it?",
-				"Thanks!\n\n\tI hate it"];
-
-var threeFour = ["mmmm, crunchy banana",
-				"That is indeed pretty firm",
-				"What, you like your bananas green? You like a little bit of green at the top of your bananas?\non an unrelated note how's that god complex of yours doing?",
-				"It's not mushy enough, wait to eat it until tomorrow",
-				"i t ' s   n o t   r i p e"];
-
-var fiveSix = ["a perfectly ripe banana",
-				"the only acceptable answer",
-				"wait you actually eat bananas?\n\n\tcringe.",
-				"omg... IT'S A BANANA!!!!!!!!!!!1!!!!!!!!!!!!!!!!!!!1!11!!",
-				"It's piss yellow! Which means it's perfect for eating."];
-
-		var sevenEight = ["A little too ripe for comfort",
-				"That is a very ripe banana, probably has a lot of brown spots. But hey, maybe you're a weirdo who likes them that way",
-				"A little too ripe for comfort",
-				"It's very bruised",
-				"Why would you even EAT that?? It's so mushyyyyyy"];
-
-		var nineTen = ["That's jut a pile of goo that you're calling a banana",
-				"I'm not convinced you DIDN'T fish this out of a grocery store dumpster",
-				"Yummy",
-				"Thanks, I've always wanted some slime",
-				"I'd rather stick my hand in a blender then call this a banana"];
-
+/*** SLIDER SHIT ***/
 var slider = document.getElementById("myRange");
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  var mush = this.value;
-  document.getElementById("num").innerHTML = mush;
-
-  if(mush >=1 && mush <25){
-    document.getElementById("out").innerHTML = oneTwo[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "1.png";
-  }else if(mush >=25 && mush <45){
-    document.getElementById("out").innerHTML = threeFour[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "2.jfif";
-  }else if(mush >= 45 && mush <= 65){
-    document.getElementById("out").innerHTML = fiveSix[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "3.png";
-  }else if(mush >= 65 && mush < 85){
-    document.getElementById("out").innerHTML = sevenEight[Math.floor(Math.random() * 5)];
-		document.getElementById('pic').src = "4.jfif"
-  }else if(mush >= 85 && mush <=100){
-    document.getElementById("out").innerHTML = nineTen[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "5.png";
-  }
+//update the current slider value each time you drag the slider handle
+slider.oninput = function(){
+	var mush = this.value;
+	document.getElementById('num').innerHTML = mush; //shows the number that the slider is inputting on the computer
 }
-*/
+
+/*** ARRAYS FOR BANANA MUSHINESS ***/
+var one = ["one1", "one2", "one3", "one4", "one5"];
+var two = ["two1", "two2", "two3", "two3", "two4", "two5"];
+var three = ["three1", "three2", "three3", "three4", "three5"];
+var four = ["four1", "four2", "four3", "four4", "four5"];
+var five = ["five1", "five2", "five3", "five4", "five5"];
+var six = ["six1", "six2", "six3", "six4", "six5"];
+var seven = ["seven1", "seven2", "seven3", "seven4", "seven5"];
+var eight = ["eight1", "eight2", "eight3", "eight4", "eight5"];
+var nine = ["nine1", "nine2", "nine3", "nine4", "nine5"];
+var ten = ["ten1", "ten2", "ten3", "ten4", "ten5"];
+
+/*** IF/ELSE TO SHOW THE RESULTS ***/
+if(mush >= 1 && mush < 15){ //1
+	document.getElementById("out").innerHTML = one[Math.floor(Math.random() * 5)];
+	document.getElementById("pic").src = "1.png";
+}else if(mush >= 15 && mush < 25){ //2
+	document.getElementById("out").innerHTML = two[Math.floor(Math.random() * 5)];
+	document.getElementById("pic").src = "2.jfif";
+}else if(mush >= 25 && mush < 35){ //3
+	document.getElementById("out").innerHTML = three[Math.floor(Math.random() * 5)];
+	document.getElementById("pic").src = "3.png";
+}else if(mush >= 35 && mush < 45){ //4
+	document.getElementById("out").innerHTML = four[Math.floor(Math.random() * 5)];
+	document.getElementById("pic").src = "4.jfif";
+}else if(mush >= 45 && mush < 55){ //5
+	document.getElementById("out").innerHTML = five[Math.floor(Math.random() * 5)];
+	document.getElementById("pic").src = "5.png";
+}else if(mush >= 55 && mush < 65){ //6
+
+}else if(mush >= 65 && mush < 75){ //7
+
+}else if(mush >= 75 && mush < 85){ //8
+
+}
+else if(mush >= 85 && mush < 95){ //9
+
+}else if(mush >= 95 && mush <= 100){ //10
+
+}
