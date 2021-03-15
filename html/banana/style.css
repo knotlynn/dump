@@ -6,13 +6,13 @@ html{
 }
 
 body{
-  background-color: #e58f65;
+  background-color: #7180AC;
   width: 80%;
   min-width: 800px;
   border-radius: 15px;
   padding: 1%;
   margin: 0 auto;
-  color: #191919;
+  color: #CCD1E1;
 }
 
 /*TYPOGRAPHY*/
@@ -24,10 +24,12 @@ p, h2{
 }
 h1, h2{
   text-align: center;
+  color: #98A3C3;
+   text-shadow: 2px 2px #191919;
 }
 
 #out{
-  color: #191919;
+  color: #CCD1E1;
   text-align: center;
 }
 
@@ -48,7 +50,7 @@ main, header, article, footer, section {
   padding: 1%;
 }
 header, main, footer{
-  background-color: #d05353;
+  background-color: #2B4570;
   border-radius: 15px;
 }
 
@@ -80,7 +82,7 @@ header, main, footer{
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #191919;
+  background: #A37A74;
   border-radius: 15px;
   background-repeat: no-repeat;
   cursor: pointer;
