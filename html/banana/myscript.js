@@ -1,6 +1,6 @@
 //*** Brenna Curtis, Banana Program ***//
 
-//automatically hide the results so there's not a bunch of flashing text every time the slider moves
+//initially hides the results
 document.getElementById('out').style.display = "none";
 document.getElementById('pic').style.display = "none";
 
@@ -21,6 +21,7 @@ function hide(){
 var slider = document.getElementById("myRange");
 
 /*** ARRAYS FOR BANANA MUSHINESS ***/
+//aka possible results
 var one = ["one1", "one2", "one3", "one4", "one5"];
 var two = ["two1", "two2", "two3", "two3", "two4", "two5"];
 var three = ["three1", "three2", "three3", "three4", "three5"];
@@ -34,12 +35,17 @@ var ten = ["ten1", "ten2", "ten3", "ten4", "ten5"];
 
 //update the current slider value each time you drag the slider handle
 slider.oninput = function(){
+
+	//hide results automatically when the slider is being moved
 	document.getElementById('out').style.display = "none";
 	document.getElementById('pic').style.display = "none";
+
+	//!!!- SHOWS WHAT NUMBER THE SLIDER IS INPUTTING, DELETE WHEN DONE -!!!
 	var mush = this.value;
 	document.getElementById('num').innerHTML = mush; //shows the number that the slider is inputting on the computer
 
 	/*** IF/ELSE TO SHOW THE RESULTS ***/
+	//also calculates the result being shown with a Math.Random
 	if(mush >= 1 && mush < 15){ //1
 		document.getElementById("out").innerHTML = one[Math.floor(Math.random() * 5)];
 		document.getElementById("pic").src = "1.png";
