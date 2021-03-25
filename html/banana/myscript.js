@@ -48,35 +48,35 @@ slider.oninput = function(){
 	//also calculates the result being shown with a Math.Random
 	if(mush >= 1 && mush < 15){ //1
 		document.getElementById("out").innerHTML = one[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "1.png";
+		document.getElementById("pic").src = "banana1.png";
 
 	}else if(mush >= 15 && mush < 25){ //2
 		document.getElementById("out").innerHTML = two[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "2.jfif";
+		document.getElementById("pic").src = "banana2.png";
 	}else if(mush >= 25 && mush < 35){ //3
 		document.getElementById("out").innerHTML = three[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "3.png";
+		document.getElementById("pic").src = "banana3.png";
 	}else if(mush >= 35 && mush < 45){ //4
 		document.getElementById("out").innerHTML = four[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "4.jfif";
+		document.getElementById("pic").src = "banana4.png";
 	}else if(mush >= 45 && mush < 55){ //5
 		document.getElementById("out").innerHTML = five[Math.floor(Math.random() * 5)];
-		document.getElementById("pic").src = "5.png";
+		document.getElementById("pic").src = "banana5.png";
 	}else if(mush >= 55 && mush < 65){ //6
 		document.getElementById("out").innerHTML = six[Math.floor(Math.random() * 5)];
-
+		document.getElementById("pic").src = "banana6.png";
 	}else if(mush >= 65 && mush < 75){ //7
 		document.getElementById("out").innerHTML = seven[Math.floor(Math.random() * 5)];
-
+		document.getElementById("pic").src = "banana7.png";
 	}else if(mush >= 75 && mush < 85){ //8
 		document.getElementById("out").innerHTML = eight[Math.floor(Math.random() * 5)];
-
+		document.getElementById("pic").src = "banana8.png";
 	}
 	else if(mush >= 85 && mush < 95){ //9
 		document.getElementById("out").innerHTML = nine[Math.floor(Math.random() * 5)];
-
+		document.getElementById("pic").src = "banana9.png";
 	}else if(mush >= 95 && mush <= 100){ //10
 		document.getElementById("out").innerHTML = ten[Math.floor(Math.random() * 5)];
-
+		document.getElementById("pic").src = "banana0.png";
 	}
 }
