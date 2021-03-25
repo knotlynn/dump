@@ -58,11 +58,19 @@ header, main, footer{
   border-radius: 15px;
 }
 
+#pic{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*SLIDER GO BRRRRRR*/
 .slidecontainer {
   width: 99%;
 }
+
 
 .slider {
   -webkit-appearance: none;

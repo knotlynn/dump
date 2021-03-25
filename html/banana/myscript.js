@@ -2,19 +2,19 @@
 
 //initially hides the results
 document.getElementById('out').style.display = "none";
-document.getElementById('pic').style.display = "none";
+//document.getElementById('pic').style.display = "none";
 
 /*** BUTTONS ***/
 //button to show results
 function display(){
 	document.getElementById('out').style.display = "block";
-	document.getElementById('pic').style.display = "block";
+	//document.getElementById('pic').style.display = "block";
 }
 
 //buttons to hide resluts because why not
 function hide(){
 	document.getElementById('out').style.display = "none";
-	document.getElementById('pic').style.display = "none";
+	//document.getElementById('pic').style.display = "none";
 }
 
 /*** SLIDER SHIT ***/
@@ -22,23 +22,23 @@ var slider = document.getElementById("myRange");
 
 /*** ARRAYS FOR BANANA MUSHINESS ***/
 //aka possible results
-var one = ["one1", "one2", "one3", "one4", "one5"];
+var one = ["This is just a rock you have painted to look like a banana", "If I bit into this, my teeth would break", "one3", "one4", "one5"];
 var two = ["two1", "two2", "two3", "two3", "two4", "two5"];
 var three = ["three1", "three2", "three3", "three4", "three5"];
-var four = ["four1", "four2", "four3", "four4", "four5"];
+var four = ["You like your bananas a little green? You like a little green on your bananas? You like to eat them when they're just a little firm? On an unrelated note, how's that god complex of yours doing?", "four2", "four3", "four4", "four5"];
 var five = ["five1", "five2", "five3", "five4", "five5"];
 var six = ["six1", "six2", "six3", "six4", "six5"];
 var seven = ["seven1", "seven2", "seven3", "seven4", "seven5"];
 var eight = ["eight1", "eight2", "eight3", "eight4", "eight5"];
-var nine = ["nine1", "nine2", "nine3", "nine4", "nine5"];
-var ten = ["ten1", "ten2", "ten3", "ten4", "ten5"];
+var nine = ["What, did you go dumpster diving?", "nine2", "nine3", "nine4", "nine5"];
+var ten = ["I would rather stick my hand in a blender than call this a banana", "This is just a pile of goo that you're calling a banana", "This is just....slime. Pure slime", "ten4", "ten5"];
 
 //update the current slider value each time you drag the slider handle
 slider.oninput = function(){
 
 	//hide results automatically when the slider is being moved
 	document.getElementById('out').style.display = "none";
-	document.getElementById('pic').style.display = "none";
+	//document.getElementById('pic').style.display = "none";
 
 	//!!!- SHOWS WHAT NUMBER THE SLIDER IS INPUTTING, DELETE WHEN DONE -!!!
 	var mush = this.value;
