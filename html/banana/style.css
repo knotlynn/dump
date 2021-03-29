@@ -18,6 +18,8 @@ body{
 /*TYPOGRAPHY*/
 h1{
   font-family: 'Fredoka One', cursive;
+  margin-left: auto;
+  margin-right: auto;
 }
 p, h2{
   font-family: 'Roboto', sans-serif;
