@@ -6,6 +6,6 @@ concpets, but also really stupid ones that exist for no reason and fulfill no re
 
 ## web pages stored in this repository:
 * [Banana Mushines Scale](https://knotlynn.github.io/dump/html/banana/index.html)
-  - gives the user a sassy remark based on how mushy the user says the banana is based on a scale of 1 - 10
+  - gives the user a sassy remark based on how mushy the user says the banana is on a scale of 1 - 10
   - currently incomplete, but still pretty fun :)
 * nothing else so far
