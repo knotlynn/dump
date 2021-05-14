@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile C:\Users\bncur\OneDrive - Dallas College\Documents\GitHub\dump\html\passwordProtection\.htpassword  
+require valid-user
