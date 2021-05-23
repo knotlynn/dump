@@ -1,9 +1,7 @@
-package test;
-
 import java.util.*;
 import static java.lang.Math.*;
 
-public class MyFirstClass {
+public class banana {
 
 	public static void main(String[] args) {
 		
