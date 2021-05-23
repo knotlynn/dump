@@ -1,9 +1,8 @@
 //Brenna Curtis, Jan 26
 //hopefully will convert farenheit to celcius and vice versa
 
-package tempConverter;
 import java.util.*;
-public class Temp {
+public class tempConverter {
 
 	public static void main(String[] args) {
 		//OH BOY WE'RE DOIN IT
