@@ -17,21 +17,21 @@ function hide(){
 	//document.getElementById('pic').style.display = "none";
 }
 
-/*** SLIDER SHIT ***/
+/*** SLIDER STUFF ***/
 var slider = document.getElementById("myRange");
 
 /*** ARRAYS FOR BANANA MUSHINESS ***/
 //aka possible results
 var one = ["This is just a rock you have painted to look like a banana", "If I bit into this, my teeth would break", "You are evil", "Did you eat this? Did you ACTUALLY eat this?? Get in the car, we're going to the ER", "I've bitten into steel softer than this banana"];
-var two = ["If you bite into this, it will make a crunching sound", "It's not ripe yet, why do you have this?", "hmm. gross.", "two3", "two4", "two5"];
-var three = ["three1", "three2", "three3", "three4", "three5"];
-var four = ["You like your bananas a little green? You like a little green on your bananas? You like to eat them when they're just a little firm? On an unrelated note, how's that god complex of yours doing?", "four2", "four3", "four4", "four5"];
-var five = ["Perfectly ripe, as all things should be.", "five2", "five3", "five4", "five5"];
+var two = ["If you bite into this, it will make a crunching sound", "It's not ripe yet, why do you have this?", "hmm. gross.", "...did you get it out of a toddlers kitchen play set?", "I don't... I don't know if you should eat that", "Why on earth do you have a crispy banana?"];
+var three = ["It's not quite ripe yet", "I mean.. it's got a fair bit of green on it but you <i>could</i> eat it if you wanter to?", "Either you plan on making a banana sundae or you're saving this for later, no sane sould would eat a partially green banana", "I mean, it's not plotting your ultimate demise, so what's the harm in it?", "This level of green is not ideal"];
+var four = ["You like your bananas a little green? You like a little green on your bananas? You like to eat them when they're just a little firm? On an unrelated note, how's that god complex of yours doing?", "It's......fine. It's fine", "I <i>suppose</i> that this level of green is acceptable", "Woop-de-doo, it's a banana", "It's perfect for eating! ..or it will be in about three and a half hours."];
+var five = ["Perfectly ripe, as all things should be.", "A monkeys favorite snack", "Are you the banana whisperer? Because this banana is just the <i>perfect</i> amount of ripeness", "WOOP, it's mine now. What are you gonna do about it??", "Wait, you actually like bananas?? That's pretty cringe"];
 var six = ["Perfectly ripe, with jusy a little extra sweetness", "six2", "six3", "six4", "six5"];
 var seven = ["Perfect to make banana bread with", "This banana is like you, overrated", "seven3", "seven4", "seven5"];
 var eight = ["eight1", "eight2", "eight3", "eight4", "eight5"];
-var nine = ["What, did you go dumpster diving?", "God, it's almost rotten", "You are a disgusting excuse for a human being", "nine4", "nine5"];
-var ten = ["I would rather stick my hand in a blender than call this a banana", "This is just a pile of goo that you're calling a banana", "This is just....slime. Pure slime", "Why is it leaking?", "damn. it's to mushy for even banana bread"];
+var nine = ["What, did you go dumpster diving?", "God, it's almost rotten", "You are a disgusting excuse for a human being", "I'm calling the cops", "nine5"];
+var ten = ["I would rather stick my hand in a blender than call this a banana", "This is just a pile of goo that you're calling a banana", "This is just....slime. Pure slime", "Why is it leaking? I'm pretty sure banana peels are suposed to be <i>intact</i>", "damn. it's to mushy for even banana bread"];
 
 //update the current slider value each time you drag the slider handle
 slider.oninput = function(){
