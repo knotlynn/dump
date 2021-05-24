@@ -53,6 +53,12 @@ header {
   flex-direction: row;
   justify-content: center;
 }
+.centered-col {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 body > * {
