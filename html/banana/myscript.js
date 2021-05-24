@@ -88,8 +88,7 @@ function changeNums(value, isReset){
 		}else if(mush >= 75 && mush < 85){ //8
 			document.getElementById("out").innerHTML = eight[Math.floor(Math.random() * eight.length)];
 			document.getElementById("pic").src = "banana8.png";
-		}
-		else if(mush >= 85 && mush < 95){ //9
+		}else if(mush >= 85 && mush < 95){ //9
 			document.getElementById("out").innerHTML = nine[Math.floor(Math.random() * nine.length)];
 			document.getElementById("pic").src = "banana9.png";
 		}else if(mush >= 95 && mush <= 100){ //10

@@ -81,6 +81,29 @@ header, main, footer{
   margin-right: auto;
 }
 
+#flip{
+  webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/*BUTTON*/
+.button{
+  margin: 20px;
+  background-color: #b8b4a4;
+  border: solid;
+  border-color: #7f6a73;
+  border-radius: 5px;
+  outline: none;
+  color: #7f6a73;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #f1e8b8;
+  border-color: #A37A74;
+  color: #A37A74;
+}
 
 /*SLIDER GO BRRRRRR*/
 .slidecontainer {
