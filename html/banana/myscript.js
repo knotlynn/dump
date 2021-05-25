@@ -16,6 +16,7 @@ function hide(){
 	var value = 50;
 	changeNums(value,true);
 	document.getElementById("myRange").value = 50;
+	document.getElementById("out").innerHTML = "Try actually using the slider first";
 
 	/*document.getElementById('out').style.display = "none";
 	document.getElementById('pic').style.display = "none";*/
