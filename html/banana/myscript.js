@@ -1,5 +1,7 @@
 //*** Brenna Curtis, Banana Program ***//
 
+//format the website to be mobile friendly
+
 //initially hides the results
 document.getElementById('out').style.display = "none";
 //document.getElementById('pic').style.display = "none";
