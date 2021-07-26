@@ -12,3 +12,6 @@ concepts, but also really stupid ones that exist for no reason and fulfill no re
 * [Password Protected](https://knotlynn.github.io/dump/html/passwordProtection/index.html)
   - i'm trying to learn password protection in HTML
   - it's not working yet
+* [Savings Calculator](https://knotlynn.github.io/dump/html/savingsCalculator/index.html)
+  - i'm to lazy to calculate how much to put into my savings manually, soooo
+  - also this 100% is an excel spreadsheet that i already made, but my brother expressed intrest in also having access to it and he can't be bothered to download anything so website it is
