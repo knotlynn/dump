@@ -1,7 +1,7 @@
 # dump
 where i dump random programs that i do in my free time
 
-there's literally nothing of any importance here, but the repository gives me much serotonin. There's a few programs of me actually trying to re-teach myself actual programming
+there's literally nothing of any importance here, but the repository gives me much joy. There's a few programs of me actually trying to re-teach myself actual programming
 concepts, but also really stupid ones that exist for no reason and fulfill no real purpose
 
 ## web pages stored in this repository:
